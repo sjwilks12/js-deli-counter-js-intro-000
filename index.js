@@ -16,7 +16,7 @@ function nowServing (currentLine) {
 }
 
 function currentLine(currentLine) {
-  if (currentLine > 0) {
+  if (currentLine.length > 0) {
     var list = "The line is currently: "
     for (var i = 1; i <= currentLine.length; i++) {
       list = list + i + `. ${currentLine[i - 1]}, `
