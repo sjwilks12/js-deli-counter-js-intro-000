@@ -23,4 +23,3 @@ function currentLine(currentLine) {
   var list2 = list.slice(0, -1)
   return list2
 }
-
