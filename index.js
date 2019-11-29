@@ -3,4 +3,3 @@ function takeANumber (currentLine, newPerson) {
   currentLine.push(newPerson)
   return `Welcome, ${newPerson}. You are number ` + spot + " in line."
 }
-
