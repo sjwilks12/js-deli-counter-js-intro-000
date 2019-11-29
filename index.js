@@ -16,10 +16,15 @@ function nowServing (currentLine) {
 }
 
 function currentLine(currentLine) {
-  var list = "The line is currently: "
-  for (var i = 1; i <= currentLine.length; i++) {
-    list = list + i + `. ${currentLine[i - 1]}, `
+  if (currentLine > 0) {
+    var list = "The line is currently: "
+    for (var i = 1; i <= currentLine.length; i++) {
+      list = list + i + `. ${currentLine[i - 1]}, `
+    }
+    var list2 = list.slice(0, -2)
+    return list2
   }
-  var list2 = list.slice(0, -2)
-  return list2
+  else {
+    return "The line is currently empty."
+  }
 }
