@@ -14,3 +14,10 @@ function nowServing (currentLine) {
     return "There is nobody waiting to be served!"
   }
 }
+
+function currentLine(currentLine) {
+  var list = "The line is currently: "
+  for (i = 1; i <= currentLine.length; i++) {
+    list = list + i + `. ${currentLine[i - 1]}`
+  }
+}
