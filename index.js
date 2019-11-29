@@ -20,6 +20,7 @@ function currentLine(currentLine) {
   for (var i = 1; i <= currentLine.length; i++) {
     list = list + i + `. ${currentLine[i - 1]}, `
   }
-  list2 = list.slice(0, -1)
+  var list2 = list.slice(0, -1)
   return list2
 }
+
